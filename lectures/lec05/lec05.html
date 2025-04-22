@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7514,10 +7515,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">dsc80_utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">dsc80_utils</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
 </div>
@@ -7530,21 +7531,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lecture-5-%E2%80%93-Exploratory-Data-Analysis-and-Data-Cleaning">Lecture 5 – Exploratory Data Analysis and Data Cleaning<a class="anchor-link" href="#Lecture-5-%E2%80%93-Exploratory-Data-Analysis-and-Data-Cleaning">¶</a></h1><h2 id="DSC-80,-Winter-2025">DSC 80, Winter 2025<a class="anchor-link" href="#DSC-80,-Winter-2025">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=22824200">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Announcements-%F0%9F%93%A3">Announcements 📣<a class="anchor-link" href="#Announcements-%F0%9F%93%A3">¶</a></h3><ul>
-<li>Lab 2 due tomorrow, <strong>Wed, Jan 22</strong>.</li>
-<li>Project 1 is due this <strong>Friday, Jan 24</strong>.</li>
-</ul>
+<h1 id="Lecture-5-%E2%80%93-Exploratory-Data-Analysis-and-Data-Cleaning">Lecture 5 – Exploratory Data Analysis and Data Cleaning<a class="anchor-link" href="#Lecture-5-%E2%80%93-Exploratory-Data-Analysis-and-Data-Cleaning">¶</a></h1><h2 id="DSC-80,-Spring-2025">DSC 80, Spring 2025<a class="anchor-link" href="#DSC-80,-Spring-2025">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7635,7 +7622,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">rest_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">'data'</span><span class="p">)</span> <span class="o">/</span> <span class="s1">'restaurants.csv'</span>
@@ -7651,7 +7638,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">rest</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">rest_path</span><span class="p">)</span>
@@ -7671,19 +7658,19 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-warning">
 <h3>Question 🤔 (Answer at <a href="https://dsc80.com/q">dsc80.com/q</a>)</h3>
-<p>Code: <code>dfs</code></p>
+<p>Code: <code>lec05-dfs</code></p>
 </div>
 <p>The first article said that one third of restaurants had at least one major safety violation.<br/>
 Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2f8367ec">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2f8367ec">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">rest</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -7692,12 +7679,81 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0422fe17">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>business_id</th>
+<th>name</th>
+<th>business_type</th>
+<th>address</th>
+<th>...</th>
+<th>lat</th>
+<th>long</th>
+<th>opened_date</th>
+<th>distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>211898487641</td>
+<td>MOBIL MART LA JOLLA VILLAGE</td>
+<td>Pre-Packaged Retail Market</td>
+<td>3233 LA JOLLA VILLAGE DR, LA JOLLA, CA 92037</td>
+<td>...</td>
+<td>32.87</td>
+<td>-117.23</td>
+<td>2002-05-05</td>
+<td>0.62</td>
+</tr>
+<tr>
+<th>1</th>
+<td>211930769329</td>
+<td>CAFE 477</td>
+<td>Low Risk Food Facility</td>
+<td>8950 VILLA LA JOLLA DR, SUITE# B123, LA JOLLA,...</td>
+<td>...</td>
+<td>32.87</td>
+<td>-117.24</td>
+<td>2023-07-24</td>
+<td>0.64</td>
+</tr>
+</tbody>
+</table>
+<p>2 rows × 12 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0422fe17">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">rest</span><span class="o">.</span><span class="n">columns</span>
@@ -7706,12 +7762,26 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5005c15a">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Index(['business_id', 'name', 'business_type', 'address', 'city', 'zip',
+       'phone', 'status', 'lat', 'long', 'opened_date', 'distance'],
+      dtype='object')</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5005c15a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -7720,12 +7790,81 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fb951ceb">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>custom_id</th>
+<th>business_id</th>
+<th>inspection_id</th>
+<th>description</th>
+<th>...</th>
+<th>completed_date</th>
+<th>status</th>
+<th>link</th>
+<th>status_link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>DEH2002-FFPN-310012</td>
+<td>211898487641</td>
+<td>6886133</td>
+<td>NaN</td>
+<td>...</td>
+<td>2023-02-16</td>
+<td>Complete</td>
+<td>http://www.sandiegocounty.gov/deh/fhd/ffis/ins...</td>
+<td>http://www.sandiegocounty.gov/deh/fhd/ffis/ins...</td>
+</tr>
+<tr>
+<th>1</th>
+<td>DEH2002-FFPN-310012</td>
+<td>211898487641</td>
+<td>6631228</td>
+<td>NaN</td>
+<td>...</td>
+<td>2022-01-03</td>
+<td>Complete</td>
+<td>http://www.sandiegocounty.gov/deh/fhd/ffis/ins...</td>
+<td>http://www.sandiegocounty.gov/deh/fhd/ffis/ins...</td>
+</tr>
+</tbody>
+</table>
+<p>2 rows × 11 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=fb951ceb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="o">.</span><span class="n">columns</span>
@@ -7734,12 +7873,26 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ccf62cbf">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Index(['custom_id', 'business_id', 'inspection_id', 'description', 'type',
+       'score', 'grade', 'completed_date', 'status', 'link', 'status_link'],
+      dtype='object')</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ccf62cbf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">viol</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -7748,16 +7901,95 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=47b64207">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>inspection_id</th>
+<th>violation</th>
+<th>major_violation</th>
+<th>status</th>
+<th>violation_text</th>
+<th>correction_type_link</th>
+<th>violation_accela</th>
+<th>link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>6886133</td>
+<td>Hot and Cold Water</td>
+<td>Y</td>
+<td>Out of Compliance - Major</td>
+<td>Hot and Cold Water</td>
+<td>http://www.sandiegocounty.gov/deh/fhd/ffis/vio...</td>
+<td>21. Hot &amp; cold water available</td>
+<td>http://www.sandiegocounty.gov/deh/fhd/ffis/vio...</td>
+</tr>
+<tr>
+<th>1</th>
+<td>6631228</td>
+<td>Hot and Cold Water</td>
+<td>N</td>
+<td>Out of Compliance - Minor</td>
+<td>Hot and Cold Water</td>
+<td>http://www.sandiegocounty.gov/deh/fhd/ffis/vio...</td>
+<td>21. Hot &amp; cold water available</td>
+<td>http://www.sandiegocounty.gov/deh/fhd/ffis/vio...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=47b64207">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">viol</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Index(['inspection_id', 'violation', 'major_violation', 'status',
+       'violation_text', 'correction_type_link', 'violation_accela', 'link'],
+      dtype='object')</pre>
 </div>
 </div>
 </div>
@@ -7888,17 +8120,54 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e74310df">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e74310df">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="s1">'score'</span><span class="p">])</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#insp['score']</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">histogram</span><span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="s1">'score'</span><span class="p">])</span>
 <span class="n">fig</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div> <div class="plotly-graph-div" id="26cdbd96-5448-4a4f-ae9d-12e6937158a2" style="height:400px; width:600px;"></div> <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("26cdbd96-5448-4a4f-ae9d-12e6937158a2")) {                    Plotly.newPlot(                        "26cdbd96-5448-4a4f-ae9d-12e6937158a2",                        [{"alignmentgroup":"True","bingroup":"x","hovertemplate":"variable=score\u003cbr\u003evalue=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"score","marker":{"color":"#1F77B4","pattern":{"shape":""}},"name":"score","offsetgroup":"score","orientation":"v","showlegend":true,"x":[96,98,98,100,0,92,0,95,0,98,0,92,0,98,98,100,100,96,100,100,0,99,96,100,93,98,98,100,100,100,100,100,100,100,99,0,96,0,100,0,0,94,97,0,0,0,90,96,98,100,0,97,96,92,0,92,0,100,94,0,94,96,93,0,95,0,0,0,0,95,0,93,0,90,99,98,99,99,0,0,96,100,100,100,0,92,96,96,100,100,96,100,100,0,0,100,0,0,98,93,0,0,0,94,100,100,98,99,99,100,100,0,96,100,0,0,98,97,0,93,81,94,99,0,92,0,97,96,97,0,100,91,97,99,0,98,100,100,100,0,100,0,95,96,96,100,96,97,0,92,0,0,95,0,95,99,0,100,93,100,100,98,0,0,90,93,96,98,0,0,0,100,99,100,96,100,100,97,96,0,100,100,0,100,97,0,100,100,100,0,0,99,99,100,98,0,96,100,96,0,0,0,99,0,100,100,95,0,100,97,0,96,99,100,100,0,100,100,0,97,95,100,97,100,92,96,0,100,100,0,100,100,100,100,100,100,98,0,96,96,98,100,100,99,100,100,98,100,100,100,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,0,0,100,98,98,98,0,0,100,100,100,100,96,97,0,100,97,98,98,0,96,98,100,100,100,99,100,100,100,98,98,98,96,0,100,99,0,0,0,98,98,100,98,98,98,98,0,0,0,0,0,0,0,98,98,98,0,0,92,100,0,0,98,96,99,100,100,96,100,95,0,100,100,100,100,100,100,98,96,0,100,98,0,96,0,100,97,100,100,100,95,100,100,100,100,99,99,99,0,0,98,100,100,100,0,98,98,0,100,95,100,99,99,0,98,0,100,0,99,0,0,95,0,97,99,0,100,100,0,95,100,100,0,100,92,0,92,0,92,100,97,0,92,0,0,90,0,100,95,0,0,98,100,94,0,96,0,0,98,94,98,99,100,0,97,0,99,95,0,96,0,0,96,96,98,0,0,0,90,96,0,94,0,0,0,96,98,0,0,97,0,0,0,94,0,0,91,0,93,95,0,0,99,100,100,100,100,0,0,98,99,0,100,98,0,100,0,100,0,0,98,0,100,98,98,0,100,0,100,97,0,96,99,0,0,98,98,100,0,0,100,0,100,100,0,0,0,0,0,96,100,100,0,100,100,100,0,100,100,100,0,0,96,95,100,0,100,100,98,0,100,100,100,0,0,91,100,0,94,96,99,0,0,0,100,100,99,100,98,100,100,100,100,100,0,100,98,100,100,0,98,0,98,99,0,99,100,0,98,90,97,0,95,99,100,98,98,100,100,98,99,98,96,100,100,98,98,0,100,100,100,0,100,0,0,100,96,100,100,99,98,100,99,100,100,100,96,97,100,98,0,95,98,0,98,80,0,0,97,100,97,97,96,97,98,97,98,99,100,100,100,100,100,0,100,99,95,96,98,0,0,0,98,98,0,100,95,0,96,0,96,0,96,100,0,99,0,100,100,100,100,100,98,98,0,0,98,98,0,0,100,100,100,100,100,100,100,96,98,100,97,97,98,0,90,97,0,97,0,90,0,96,94,93,0,99,0,97,99,95,94,0,0,91,80,93,0,93,0,97,96,0,94,96,96,100,99,100,0,0,98,0,0,91,98,100,99,98,96,0,100,98,100,100,0,94,0,0,95,94,0,0,100,0,98,92,0,0,99,0,99,0,0,0,99,0,94,98,100,100,98,100,100,99,100,100,100,100,100,97,98,0,0,95,0,95,0,0,98,98,0,99,99,0,0,98,100,0,0,100,0,97,100,0,0,98,98,98,100,0,0,100,100,100,98,99,0,100,0,100,100,0,100,98,96,0,100,100,100,92,98,100,0,96,0,95,0,95,0,95,99,99,98,100,0,100,100,97,99,100,98,100,96,0,94,98,100,100,0,96,98,100,100,98,100,0,0,98,100,100,100,100,100,100,99,99,100,0,100,0,91,94,98,97,0,0,93,100,100,100,0,99,96,98,100,100,98,100,100,0,0,98,96,100,0,100,99,100,100,100,100,100,0,0,93,99,97,98,0,100,0,0,100,0,95,98,0,0,100,99,99,100,0,0,0,96,0,100,0,100,100,100,100,0,100,100,100,100,0,0,100,0,98,98,100,0,95,97,0,0,96,100,0,94,0,93,99,98,100,93,100,0,94,93,0,96,94,0,100,100,100,100,98,0,0,97,0,98,0,100,100,100,100,0,0,0,100,99,100,100,0,0,98,96,0,98,97,0,95,0,98,0,97,100,100,0,0,100,100,100,0,0,99,97,97,98,99,100,100,100,0,100,100,100,100,100,100,100,0,99,100,100,100,100,97,100,98,100,0,100,100,100,100,0,98,0,94,98,0,0,0,100,100,0,97,0,96,95,0,99,97,100,100,100,0,0,100,100,100,98,100,100,100,100,0,0,95,98,96,99,0,97,97,99,98,0,94,0,0,95,0,0,93,0,100,0,98,0,100,100,0,100,100,0,98,99,0,100,100,0,100,100,0,100,98,0,98,100,100,100,100,100,0,100,0,99,100,99,0,0,97,100,0,96,0,0,0,0,94,0,0,97,0,98,0,91,98,0,0,0,100,100,100,100,0,100,95,98,98,100,100,100,100,98,100,99,99,0,100,100,100,0,0,92,0,92,98,0,100,100,100,0,98,94,98,94,0,100,98,100,97,98,100,99,100,100,100,94,100,100,100,100,100,100,92,95,98,98,0,100,100,0,100,100,100,0,100,100,100,0,100,98,98,100,0,97,99,100,0,0,97,94,0,93,96,0,91,0,98,97,0,0,95,0,0,0,0,100,96,100,0,100,97,99,0,100,100,100,100,100,100,99,0,100,100,100,0,0,0,94,98,0,0,0,93,98,0,0,0,93,95,97,0,0,90,90,0,93,90,0,96,97,100,0,95,93,100,0,98,0,96,100,100,98,0,0,95,0,95,97,0,0,0,95,99,94,100,97,98,99,100,98,0,99,100,100,100,0,0,0,97,0,98,98,100,98,0,100,98,0,100,0,0,95,0,92,0,0,94,0,0,0,90,0,95,100,100,0,94,0,0,0,0,97,95,0,95,0,96,93,96,0,0,0,94,97,100,100,100,0,100,0,0,99,96,97,0,100,100,0,0,0,0,0,97,98,0,99,0,92,97,100,98,0,96,0,90,100,100,0,0,90,92,100,98,0,96,97,0,100,100,100,100,100,100,100,100,100,0,96,100,0,96,0,100,97,0,90,0,92,0,93,0,0,0,100,0,100,100,100,100,98,0,96,97,100,98,100,0,0,100,98,100,100,98,99,100,100,98,100,100,100,0,98,95,97,0,0,97,100,100,100,100,100,98,100,100,100,0,99,100,0,0,95,0,92,0,0,94,0,99,98,96,0,0,0,97,95,95,0,98,90,0,0,0,96,98,96,0,0,0,0,100,96,100,96,93,0,99,96,0,98,94,0,97,0,0,0,98,92,0,98,98,0,0,100,99,97,0,0,95,96,0,94,98,91,0,0,98,98,100,0,0,0,95,0,96,0,0,96,99,0,0,99,98,93,0,94,0,98,97,96,0,0,100,100,99,0,100,98,100,0,98,94,0,97,93,100,95,0,96,93,96,98,100,98,99,96,0,100,100,100,97,96,0,94,0,98,98,100,100,100,0,98,0,0,100,100,100,0,97,100,100,100,98,100,100,100,100,0,99,100,100,0,96,100,98,100,100,100,100,100,0,100,100,99,100,0,100,94,100,96,0,100,100,99,100,0,0,98,96,98,100,0,100,98,97,0,96,100,100,0,0,0,0,0,100,100,100,0,0,0,100,100,100,100,100,96,97,100,100,98,0,0,100,98,100,99,99,100,0,0,0,98,0,100,0,0,100,100,100,100,100,100,100,100,100,100,100,100,100,100,99,97,100,100,0,94,100,100,100,100,100,98,99,100,0,0,98,100,100,0,0,100,100,0,0,0,97,0,0,0,100,95,99,99,0,0,92,98,99,100,100,99,100,100,100,100,100,100,0,99,95,97,97,0,98,96,0,99,98,0,0,90,0,0,92,96,0,0,100,0,0,93,98,0,100,0,93,97,0,98,0,99,0,0,98,0,98,100,0,100,0,100,96,100,98,0,98,94,100,99,0,96,0,0,0,94,0,91,91,98,0,98,100,100,100,0,0,96,96,96,0,100,96,0,99,0,100,100,99,0,0,98,96,98,99,96,0,0,0,0,0,100,91,99,98,97,0,100,100,100,0,100,99,0,100,98,0,100,100,100,96,98,97,99,0,0,100,100,100,100,0,97,0,0,0,90,94,98,99,0,0,97,99,96,97,98,96,96,100,98,0,97,98,100,100,97,100,100,0,0,96,94,0,98,94,0,0,93,100,100,0,0,97,98,0,0,98,94,0,0,0,0,0,91,0,90,93,0,92,0,91,0,0,93,99,0,0,96,96,0,0,90,0,96,90,0,96,0,95,0,95,0,100,100,0,0,0,0,0,93,92,97,0,94,0,95,0,95,98,97,0,0,0,92,97,100,0,0,100,96,0,0,0,0,93,0,97,97,0,94,0,92,0,0,95,99,0,97,0,100,100,100,0,91,0,98,95,100,0,94,94,98,0,0,0,98,98,100,98,0,0,99,0,0,100,0,96,0,92,0,98,100,100,0,100,0,97,99,0,0,100,95,97,99,0,0,0,0,100,99,100,98,98,0,99,100,100,100,100,100,99,0,97,99,96,98,0,98,100,96,96,0,0,0,96,98,0,96,100,100,98,100,100,99,100,100,0,100,100,100,0,0,0,0,0,0,94,96,0,94,0,0,96,0,0,0,0,95,0,94,100,0,0,97,96,0,92,0,0,100,0,0,90,0,91,0,91,0,0,0,98,99,0,95,94,0,96,0,94,0,0,0,93,0,0,0,99,100,0,97,98,99,100,0,0,91,0,98,0,0,0,0,90,0,95,0,97,0,95,0,98,0,93,98,100,99,0,99,0,0,0,0,97,0,0,98,0,0,90,90,94,95,98,99,100,0,90,95,94,0,96,93,0,0,90,0,90,0,97,0,0,0,95,0,0,93,0,98,0,0,0,96,100,100,100,0,98,100,100,98,96,0,100,0,100,95,95,0,94,0,0,100,100,100,98,0,0,98,100,0,0,100,0,0,98,100,0,98,91,97,0,97,97,0,98,99,98,97,98,0,97,98,98,99,96,99,98,0,0,0,0,97,95,0,99,95,98,0,92,0,99,0,0,99,97,96,100,0,100,100,100,0,100,0,90,96,0,100,100,0,0,92,96,0,0,92,90,0,90,0,92,98,100,99,100,0,0,90,0,93,0,0,97,0,0,0,0,92,0,97,95,96,0,100,0,100,0,100,100,0,90,97,0,0,96,81,93,0,97,95,0,90,95,0,96,0,97,95,0,96,0,98,90,99,97,0,0,98,0,90,0,90,0,90,0,0,0,0,90,98,0,0,0,0,96,90,94,100,90,90,0,90,0,0,93,0,0,96,96,0,95,0,94,0,96,100,99,98,100,100,98,99,0,92,96,96,0,97,96,98,100,0,98,100,100,100,100,100,100,100,98,95,97,100,0,95,98,98,0,0,95,96,100,91,97,100,0,0,92,93,96,93,0,0,95,97,97,0,0,100,0,96,0,93,97,0,97,98,0,100,0,0,97,98,99,0,0,100,100,0,90,94,0,0,0,94,0,91,95,0,0,93,94,0,100,98,95,100,98,99,100,99,97,100,0,0,92,95,95,0,0,98,92,94,0,87,96,96,92,90,97,99,100,99,94,95,100,99,0,98,96,99,100,100,100,0,100,0,100,100,0,100,98,0,0,98,96,95,0,93,0,90,0,93,99,0,0,97,99,99,0,0,0,0,99,0,0,0,98,0,97,98,96,90,93,98,99,100,0,0,92,94,0,93,95,0,0,100,100,0,100,100,100,100,0,95,96,93,0,98,98,100,97,97,94,99,100,98,100,0,0,90,93,98,0,99,100,0,100,100,100,100,100,0,94,98,96,0,98,100,100,100,0,0,90,0,90,94,0,96,0,97,97,0,100,95,99,99,100,0,100,95,0,0,91,97,95,0,98,0,92,94,97,0,93,0,97,97,95,0,98,100,100,0,100,0,100,100,98,100,0,90,0,93,0,0,96,91,100,100,100,100,100,100,98,100,100,100,98,98,100,100,100,100,0,96,0,100,98,100,100,100,99,100,93,0,0,90,97,0,92,96,96,0,0,0,0,91,93,0,100,98,100,94,95,0,90,98,0,97,98,99,0,95,97,100,0,100,0,0,0,0,90,90,0,0,98,0,0,0,0,0,100,0,0,0,97,0,0,91,0,93,97,0,96,98,98,0,95,98,0,96,97,95,0,100,100,98,100,100,100,100,100,0,91,95,0,96,0,98,100,100,100,99,100,100,98,99,100,100,100,100,0,98,100,0,100,100,100,0,0,100,100,100,0,100,100,100,0,0,100,99,99,98,97,0,100,100,0,99,100,99,99,100,100,97,0,100,100,96,100,100,0,100,0,98,0,99,100,0,95,0,92,96,0,0,96,0,0,0,0,99,100,100,0,0,0,91,0,0,0,94,0,100,100,0,96,0,0,98,0,98,0,0,100,100,0,97,100,0,93,0,97,96,0,0,97,0,0,93,98,100,0,90,96,96,0,97,95,0,80,0,95,97,99,98,100,98,0,0,97,96,0,100,0,0,90,0,90,97,0,96,96,96,97,94,98,0,0,99,96,0,0,93,98,0,97,0,0,100,98,99,97,100,100,100,0,100,98,94,0,93,99,0,93,100,0,99,94,0,97,97,0,90,0,96,93,0,0,0,94,90,99,95,98,94,96,98,98,0,100,98,100,100,0,0,94,98,100,99,99,100,96,0,100,98,98,98,0,0,100,100,100,0,100,100,100,100,100,100,100,100,100,100,100,100,0,100,97,0,97,0,100,0,0,0,98,0,97,98,0,98,100,0,100,0,0,96,96,0,93,0,0,90,0,0,92,98,0,0,100,100,99,100,0,0,93,98,0,94,97,0,0,0,0,96,97,0,0,100,100,100,100,99,0,100,0,100,98,98,100,0,95,98,99,97,100,95,94,99,98,100,100,98,98,98,0,98,94,0,0,0,0,0,0,99,0,92,92,94,0,0,0,0,0,94,94,100,0,96,94,0,0,94,0,0,92,0,0,94,98,0,100,100,0,100,100,98,0,0,0,99,0,0,0,0,0,0,95,0,0,91,91,0,0,0,0,90,95,96,0,94,97,98,100,0,98,97,0,100,97,0,0,0,92,0,96,97,0,0,99,99,99,99,100,99,100,0,94,0,95,0,92,0,90,0,91,95,0,0,100,100,0,0,97,95,0,0,98,98,100,0,90,94,0,0,97,0,92,0,100,100,100,94,0,97,93,0,98,0,100,100,100,0,0,98,0,0,91,91,0,97,96,0,96,0,98,0,98,92,0,94,100,0,0,0,0,95,93,0,0,0,0,96,0,97,0,96,0,96,98,98,98,0,93,0,98,0,0,0,100,97,96,97,0,96,100,100,100,0,100,100,100,0,95,97,96,0,97,0,0,94,0,0,93,92,0,0,0,97,0,100,97,99,0,99,0,98,98,100,96,98,100,100,0,99,100,99,100,100,0,99,99,99,100,100,100,100,100,100,99,0,0,0,0,0,98,0,0,0,0,94,100,96,0,0,97,97,100,97,0,98,100,100,100,100,98,100,0,100,98,100,94,0,99,0,0,99,99,96,0,0,93,0,0,98,97,0,93,0,96,94,0,99,0,95,93,98,96,0,0,0,97,98,0,100,97,0,93,0,0,94,0,98,0,0,98,0,0,95,98,0,91,96,0,96,100,100,0,99,98,0,0,97,99,0,100,99,100,98,0,97,0,93,0,0,0,0,0,93,0,97,99,0,98,0,0,93,96,0,94,0,95,0,0,0,95,92,91,0,0,92,0,100,100,98,98,100,96,0,94,92,0,95,100,0,100,100,98,99,100,0,99,97,97,98,0,98,0,100,97,98,97,96,0,99,0,94,0,94,98,97,96,100,98,99,100,0,100,100,100,0,94,100,97,0,95,0,100,0,100,100,98,100,100,98,100,98,100,0,97,100,0,100,100,0,100,0,0,0,98,100,0,98,0,98,100,100,99,100,96,100,100,100,0,0,0,0,0,0,96,0,0,0,0,95,0,98,0,0,91,92,100,97,99,0,93,96,0,97,0,0,100,90,99,96,96,97,0,0,93,0,96,95,0,0,100,97,100,0,100,100,95,99,99,94,97,95,0,98,0,0,100,100,100,0,98,100,100,0,91,91,95,0,97,97,0,98,100,97,96,96,99,99,0,98,98,100,0,100,100,0,100,0,93,0,93,97,0,94,0,0,90,100,100,100,0,93,95,0,97,98,0,100,98,100,95,99,0,100,0,0,97,0,100,97,97,100,97,98,0,98,0,94,0,98,95,100,99,0,100,92,92,0,0,90,97,0,98,0,95,96,98,96,100,0,95,0,94,0,97,98,0,97,0,95,100,0,100,96,0,96,98,0,98,96,0,0,0,0,0,0,100,0,96,98,99,98,0,0,99,100,100,0,100,99,0,96,100,99,100,100,100,99,95,100,94,0,91,0,96,90,96,94,0,92,0,91,100,95,97,0,94,98,0,0,97,0,94,0,92,96,0,0,0,0,90,99,96,0,0,93,0,90,95,0,0,99,100,92,96,98,95,97,99,98,99,0,100,100,0,100,0,93,100,100,100,0,100,100,97,100,0,97,100,100,100,0,98,100,100,100,0,100,100,100,100,98,98,99,100,100,0,98,98,99,0,0,0,0,0,0,99,0,98,97,93,98,0,97,91,0,100,100,100,92,95,96,0,0,96,100,100,99,95,0,0,91,93,98,97,0,90,0,94,0,93,93,0,0,95,94,0,99,98,0,98,100,100,0,0,0,91,0,90,0,90,98,0,0,0,0,0,93,0,90,95,0,0,0,91,96,96,100,99,100,90,95,97,0,0,0,95,100,99,100,0,0,94,96,0,0,0,95,98,94,0,0,95,0,0,95,91,97,97,94,0,0,95,97,90,0,93,0,0,93,0,92,98,94,0,0,0,98,100,100,0,0,90,92,0,91,0,93,0,0,0,94,99,99,100,99,98,99,99,99,0,100,97,0,100,100,100,100,100,100,98,98,100,100,100,100,0,0,0,0,0,0,98,98,99,100,99,100,0,100,0,0,0,93,97,0,100,0,0,0,98,98,94,96,0,96,99,0,0,0,0,100,100,0,90,93,97,0,100,100,100,100,97,100,0,0,91,100,98,0,98,0,0,95,93,0,0,100,100,0,100,100,100,100,0,92,0,95,0,0,93,0,100,97,100,0,0,95,0,0,92,98,98,0,93,0,96,0,98,98,0,99,0,0,94,94,0,98,0,96,0,95,0,100,99,100,98,100,100,100,0,0,92,96,97,97,0,0,95,100,0,0,95,96,100,0,100,100,100,0,98,0,0,94,90,95,0,95,0,92,0,95,98,97,100,98,98,0,92,93,97,0,91,95,0,90,99,0,99,100,100,0,0,93,97,0,94,0,0,0,0,94,0,98,99,100,100,100,100,0,97,98,98,0,93,98,0,96,96,94,0,98,100,0,0,91,92,0,91,91,0,0,100,100,100,100,0,98,94,0,96,97,100,0,98,99,0,98,98,100,100,100,100,98,100,100,99,100,0,98,100,100,100,100,0,93,0,0,90,91,94,0,95,98,0,0,99,100,100,98,0,96,100,100,100,100,100,100,100,0,97,0,98,98,0,0,0,92,93,0,96,0,94,92,100,0,90,0,0,94,95,96,96,94,0,100,0,93,96,100,99,100,0,96,0,0,100,0,0,97,96,100,0,100,0,0,93,0,94,94,0,94,96,99,0,0,96,98,0,100,100,100,0,96,95,0,99,90,99,95,100,100,0,100,98,97,100,0,97,95,0,97,95,96,96,100,0,97,100,0,0,0,97,100,98,100,0,95,94,0,99,0,0,0,0,91,0,92,0,94,100,100,0,0,0,96,0,90,0,93,0,0,98,100,98,0,100,0,100,92,0,100,98,99,0,98,97,0,100,93,99,0,0,96,100,91,99,98,0,0,94,98,99,99,99,0,99,0,93,97,0,0,0,94,0,0,94,0,96,0,95,0,0,100,99,100,99,0,0,96,0,96,99,100,0,0,100,97,96,100,0,98,98,99,100,0,0,100,100,100,0,0,97,99,100,100,0,97,100,94,0,99,0,100,98,100,0,0,98,100,95,100,98,98,98,0,93,100,94,95,99,100,0,100,98,0,98,100,98,100,99,98,100,0,100,100,100,0,99,94,0,0,0,90,97,99,0,0,90,98,0,98,0,95,98,100,100,98,100,94,0,0,93,95,98,0,91,0,100,91,0,90,80,92,0,0,90,82,0,92,100,0,0,90,92,0,90,93,0,92,96,99,0,96,0,0,98,97,0,0,94,97,0,0,100,98,98,100,100,100,100,95,94,0,98,0,96,97,0,0,98,0,0,100,100,98,99,100,100,98,100,0,100,0,95,95,100,0,100,0,95,93,0,0,0,0,0,91,95,98,100,98,100,91,95,98,0,99,94,0,98,93,95,0,91,98,0,0,91,0,0,90,94,95,95,0,100,94,0,97,0,0,91,94,0,0,98,98,98,97,96,100,100,100,100,98,0,98,98,99,98,0,0,93,0,90,96,100,100,0,0,100,98,100,98,100,100,98,95,0,0,91,98,98,96,0,98,100,100,100,100,97,99,99,0,98,0,0,0,0,0,0,96,96,100,100,0,100,97,97,100,0,100,100,100,99,100,100,98,95,0,91,97,0,0,0,0,0,0,0,90,93,0,90,100,100,0,92,90,0,94,99,0,97,96,0,0,93,97,0,95,0,98,100,100,92,96,90,100,94,0,94,98,100,93,96,0,97,98,0,99,97,0,100,100,97,98,100,99,100,100,0,0,95,0,94,97,100,98,98,100,100,100,100,98,0,93,96,96,95,100,100,100,100,94,94,94,100,0,0,94,0,94,98,0,0,99,98,99,0,98,96,100,100,96,0,100,98,100,100,96,100,0,99,100,100,100,94,100,97,0,97,99,100,100,98,99,98,0,0,0,0,0,0,100,99,0,100,99,0,0,100,100,99,98,98,100,98,0,0,0,99,97,100,0,98,100,99,100,0,0,100,100,98,0,100,0,90,0,96,80,96,0,96,0,0,100,0,100,98,0,96,0,94,96,0,0,93,0,98,0,0,100,98,100,0,100,100,0,0,98,0,99,0,99,0,91,100,100,0,0,93,0,92,95,100,0,95,0,93,97,98,0,0,98,99,100,94,94,95,0,100,100,100,0,98,98,98,97,97,94,99,97,98,100,99,99,100,100,100,100,100,100,0,96,0,98,0,0,0,93,0,0,96,0,100,100,0,100,100,0,98,100,99,100,0,100,100,99,98,100,94,97,100,96,99,100,99,100,100,100,100,0,0,95,92,90,98,0,0,97,100,99,0,0,0,90,95,95,0,0,0,97,98,99,100,0,0,0,0,92,0,0,97,86,0,93,0,0,95,97,0,97,98,0,0,0,99,0,97,98,98,99,99,96,97,0,96,0,0,96,0,84,0,0,90],"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.5,"xanchor":"center"},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"autosize":true,"height":400,"margin":{"b":30,"l":30,"r":30,"t":30},"width":600}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"value"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"}},"legend":{"title":{"text":"variable"},"tracegroupgap":0},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('26cdbd96-5448-4a4f-ae9d-12e6937158a2');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script> </div>
 </div>
 </div>
 </div>
@@ -7914,12 +8183,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ace9f95d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ace9f95d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">scores</span> <span class="o">=</span> <span class="p">(</span>
@@ -7929,6 +8198,7 @@ Which DataFrames and columns seem most useful to verify this?</p>
     <span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="p">)</span>
+<span class="c1">#scores</span>
 <span class="c1"># x= and y= are columns of scores. Convenient!</span>
 <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">'grade'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'score'</span><span class="p">)</span>
 </pre></div>
@@ -7936,17 +8206,89 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=29b951fe">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div> <div class="plotly-graph-div" id="fe6425a0-cfb4-4a12-97f6-14b09721b9ff" style="height:400px; width:600px;"></div> <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("fe6425a0-cfb4-4a12-97f6-14b09721b9ff")) {                    Plotly.newPlot(                        "fe6425a0-cfb4-4a12-97f6-14b09721b9ff",                        [{"alignmentgroup":"True","hovertemplate":"grade=%{x}\u003cbr\u003escore=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#1F77B4","pattern":{"shape":""}},"name":"","offsetgroup":"","orientation":"v","showlegend":false,"textposition":"auto","x":["A","B"],"xaxis":"x","y":[97.2686366689053,81.9090909090909],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.5,"xanchor":"center"},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"autosize":true,"height":400,"margin":{"b":30,"l":30,"r":30,"t":30},"width":600}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"grade"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"score"}},"legend":{"tracegroupgap":0},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('fe6425a0-cfb4-4a12-97f6-14b09721b9ff');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script> </div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=29b951fe">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Same as the above!</span>
 <span class="n">scores</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">'bar'</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">'grade'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'score'</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div> <div class="plotly-graph-div" id="e9c7cf85-ed22-4a46-9c20-3d0fae9722ab" style="height:400px; width:600px;"></div> <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("e9c7cf85-ed22-4a46-9c20-3d0fae9722ab")) {                    Plotly.newPlot(                        "e9c7cf85-ed22-4a46-9c20-3d0fae9722ab",                        [{"alignmentgroup":"True","hovertemplate":"grade=%{x}\u003cbr\u003escore=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"","marker":{"color":"#1F77B4","pattern":{"shape":""}},"name":"","offsetgroup":"","orientation":"v","showlegend":false,"textposition":"auto","x":["A","B"],"xaxis":"x","y":[97.2686366689053,81.9090909090909],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.5,"xanchor":"center"},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"autosize":true,"height":400,"margin":{"b":30,"l":30,"r":30,"t":30},"width":600}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"grade"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"score"}},"legend":{"tracegroupgap":0},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('e9c7cf85-ed22-4a46-9c20-3d0fae9722ab');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script> </div>
 </div>
 </div>
 </div>
@@ -8021,7 +8363,7 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-warning">
 <h3>Question 🤔 (Answer at <a href="https://dsc80.com/q">dsc80.com/q</a>)</h3>
-<p>Code: <code>types</code></p>
+<p>Code: <code>lec05-types</code></p>
 </div>
 <p>Determine the <strong>feature type</strong> of each of the following variables.</p>
 <ul>
@@ -8036,16 +8378,28 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=252004ad">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=252004ad">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here.</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">...</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Ellipsis</pre>
 </div>
 </div>
 </div>
@@ -8069,12 +8423,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=39dab3be">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=39dab3be">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># pandas stores these as ints, but they're actually nominal.</span>
@@ -8084,17 +8438,55 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7586f76d">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0      211898487641
+1      211930769329
+2      211909057778
+           ...     
+997    211899338714
+998    211942150255
+999    211925713322
+Name: business_id, Length: 1000, dtype: int64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7586f76d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># pandas stores these as strings, but they're actually numeric.</span>
 <span class="n">rest</span><span class="p">[</span><span class="s1">'opened_date'</span><span class="p">]</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0      2002-05-05
+1      2023-07-24
+2      2019-01-22
+          ...    
+997    2002-05-05
+998    2016-11-03
+999    2022-11-03
+Name: opened_date, Length: 1000, dtype: object</pre>
 </div>
 </div>
 </div>
@@ -8181,16 +8573,121 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4ef21b6b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4ef21b6b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">rest</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>business_id</th>
+<th>name</th>
+<th>business_type</th>
+<th>address</th>
+<th>...</th>
+<th>lat</th>
+<th>long</th>
+<th>opened_date</th>
+<th>distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>869</th>
+<td>211912304517</td>
+<td>SWEET MAHINA</td>
+<td>Class B Cottage Food Operation</td>
+<td>4551 MT LA PLATTA PL, SAN DIEGO, CA 92117-3045</td>
+<td>...</td>
+<td>32.83</td>
+<td>-117.19</td>
+<td>2021-08-31</td>
+<td>4.47</td>
+</tr>
+<tr>
+<th>935</th>
+<td>211906499771</td>
+<td>THE GOLF BAR</td>
+<td>Restaurant Food Facility</td>
+<td>5583 CLAIREMONT MESA BLVD, SAN DIEGO, CA 92117</td>
+<td>...</td>
+<td>32.83</td>
+<td>-117.17</td>
+<td>2019-10-11</td>
+<td>4.84</td>
+</tr>
+<tr>
+<th>187</th>
+<td>211984552427</td>
+<td>LEMONADE</td>
+<td>Restaurant Food Facility</td>
+<td>4545 LA JOLLA VILLAGE DR, SUITE# D-35, SAN DIE...</td>
+<td>...</td>
+<td>32.87</td>
+<td>-117.21</td>
+<td>2014-12-12</td>
+<td>1.51</td>
+</tr>
+<tr>
+<th>902</th>
+<td>211944527313</td>
+<td>DAVANTI ENOTECA</td>
+<td>Restaurant Food Facility</td>
+<td>12955 EL CAMINO REAL, SUITE# G-3, SAN DIEGO, C...</td>
+<td>...</td>
+<td>32.95</td>
+<td>-117.24</td>
+<td>2020-02-24</td>
+<td>4.68</td>
+</tr>
+<tr>
+<th>640</th>
+<td>211903875703</td>
+<td>MAGDA'S BAKERY</td>
+<td>Class A Cottage Food Operation</td>
+<td>6505 MUIRLANDS DR, LA JOLLA, CA 92037-6350</td>
+<td>...</td>
+<td>32.83</td>
+<td>-117.26</td>
+<td>2020-09-16</td>
+<td>3.76</td>
+</tr>
+</tbody>
+</table>
+<p>5 rows × 12 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8217,16 +8714,31 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dce83dff">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dce83dff">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="p">[</span><span class="s1">'grade'</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>grade
+A    2978
+B      11
+Name: count, dtype: int64</pre>
 </div>
 </div>
 </div>
@@ -8242,16 +8754,46 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a3206cb6">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a3206cb6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
+RangeIndex: 5179 entries, 0 to 5178
+Data columns (total 11 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   custom_id       5179 non-null   object 
+ 1   business_id     5179 non-null   int64  
+ 2   inspection_id   5179 non-null   int64  
+ 3   description     0 non-null      float64
+ 4   type            5179 non-null   object 
+ 5   score           5179 non-null   int64  
+ 6   grade           2989 non-null   object 
+ 7   completed_date  5179 non-null   object 
+ 8   status          5179 non-null   object 
+ 9   link            5179 non-null   object 
+ 10  status_link     5179 non-null   object 
+dtypes: float64(1), int64(3), object(7)
+memory usage: 445.2+ KB
+</pre>
 </div>
 </div>
 </div>
@@ -8267,12 +8809,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8ab9641a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8ab9641a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Are there multiple restaurants with the same address?</span>
@@ -8282,12 +8824,32 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6a5d8823">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>address
+5300 GRAND DEL MAR CT, SAN DIEGO, CA 92130       9
+8657 VILLA LA JOLLA DR, LA JOLLA, CA 92037       8
+4545 LA JOLLA VILLAGE DR, SAN DIEGO, CA 92122    8
+                                                ..
+3963 GOVERNOR DR, SAN DIEGO, CA 92122            1
+4041 GOVERNOR DR, SAN DIEGO, CA 92122-2520       1
+2672 DEL MAR HEIGHTS RD, DEL MAR, CA 92014       1
+Name: count, Length: 863, dtype: int64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6a5d8823">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Keeps all rows with duplicate addresses.</span>
@@ -8302,12 +8864,141 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a7ace0e3">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>business_id</th>
+<th>name</th>
+<th>business_type</th>
+<th>address</th>
+<th>...</th>
+<th>lat</th>
+<th>long</th>
+<th>opened_date</th>
+<th>distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>406</th>
+<td>211899308875</td>
+<td>NASEEMS BAKERY &amp; KABOB</td>
+<td>Restaurant Food Facility</td>
+<td>10066 PACIFIC HEIGHTS BLVD, SAN DIEGO, CA 92121</td>
+<td>...</td>
+<td>32.90</td>
+<td>-117.19</td>
+<td>2012-04-17</td>
+<td>2.77</td>
+</tr>
+<tr>
+<th>402</th>
+<td>211898699154</td>
+<td>HANAYA SUSHI CAFE</td>
+<td>Restaurant Food Facility</td>
+<td>10066 PACIFIC HEIGHTS BLVD, SAN DIEGO, CA 92121</td>
+<td>...</td>
+<td>32.90</td>
+<td>-117.19</td>
+<td>2011-03-22</td>
+<td>2.77</td>
+</tr>
+<tr>
+<th>401</th>
+<td>211899558107</td>
+<td>ARMANDOS MEXICAN FOOD</td>
+<td>Restaurant Food Facility</td>
+<td>10066 PACIFIC HEIGHTS BLVD, SAN DIEGO, CA 92121</td>
+<td>...</td>
+<td>32.90</td>
+<td>-117.19</td>
+<td>2005-06-28</td>
+<td>2.77</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>575</th>
+<td>211972411855</td>
+<td>TARA HEATHER CAKE DESIGN</td>
+<td>Caterer</td>
+<td>9932 MESA RIM RD, SUITE# A, SAN DIEGO, CA 9212...</td>
+<td>...</td>
+<td>32.90</td>
+<td>-117.18</td>
+<td>2014-04-24</td>
+<td>3.51</td>
+</tr>
+<tr>
+<th>344</th>
+<td>211990537315</td>
+<td>COMPASS GROUP FEDEX EXPRESS OLSON</td>
+<td>Pre-Packaged Retail Market</td>
+<td>9999 OLSON DR, SAN DIEGO, CA 92121-2837</td>
+<td>...</td>
+<td>32.89</td>
+<td>-117.20</td>
+<td>2022-10-19</td>
+<td>2.27</td>
+</tr>
+<tr>
+<th>343</th>
+<td>211976587262</td>
+<td>CANTEEN - FED EX OLSON</td>
+<td>Pre-Packaged Retail Market</td>
+<td>9999 OLSON DR, SAN DIEGO, CA 92121-2837</td>
+<td>...</td>
+<td>32.89</td>
+<td>-117.20</td>
+<td>2020-07-31</td>
+<td>2.27</td>
+</tr>
+</tbody>
+</table>
+<p>213 rows × 12 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a7ace0e3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Does the same thing as above!</span>
@@ -8316,6 +9007,135 @@ Which DataFrames and columns seem most useful to verify this?</p>
     <span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'address'</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>business_id</th>
+<th>name</th>
+<th>business_type</th>
+<th>address</th>
+<th>...</th>
+<th>lat</th>
+<th>long</th>
+<th>opened_date</th>
+<th>distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>406</th>
+<td>211899308875</td>
+<td>NASEEMS BAKERY &amp; KABOB</td>
+<td>Restaurant Food Facility</td>
+<td>10066 PACIFIC HEIGHTS BLVD, SAN DIEGO, CA 92121</td>
+<td>...</td>
+<td>32.90</td>
+<td>-117.19</td>
+<td>2012-04-17</td>
+<td>2.77</td>
+</tr>
+<tr>
+<th>402</th>
+<td>211898699154</td>
+<td>HANAYA SUSHI CAFE</td>
+<td>Restaurant Food Facility</td>
+<td>10066 PACIFIC HEIGHTS BLVD, SAN DIEGO, CA 92121</td>
+<td>...</td>
+<td>32.90</td>
+<td>-117.19</td>
+<td>2011-03-22</td>
+<td>2.77</td>
+</tr>
+<tr>
+<th>401</th>
+<td>211899558107</td>
+<td>ARMANDOS MEXICAN FOOD</td>
+<td>Restaurant Food Facility</td>
+<td>10066 PACIFIC HEIGHTS BLVD, SAN DIEGO, CA 92121</td>
+<td>...</td>
+<td>32.90</td>
+<td>-117.19</td>
+<td>2005-06-28</td>
+<td>2.77</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>575</th>
+<td>211972411855</td>
+<td>TARA HEATHER CAKE DESIGN</td>
+<td>Caterer</td>
+<td>9932 MESA RIM RD, SUITE# A, SAN DIEGO, CA 9212...</td>
+<td>...</td>
+<td>32.90</td>
+<td>-117.18</td>
+<td>2014-04-24</td>
+<td>3.51</td>
+</tr>
+<tr>
+<th>344</th>
+<td>211990537315</td>
+<td>COMPASS GROUP FEDEX EXPRESS OLSON</td>
+<td>Pre-Packaged Retail Market</td>
+<td>9999 OLSON DR, SAN DIEGO, CA 92121-2837</td>
+<td>...</td>
+<td>32.89</td>
+<td>-117.20</td>
+<td>2022-10-19</td>
+<td>2.27</td>
+</tr>
+<tr>
+<th>343</th>
+<td>211976587262</td>
+<td>CANTEEN - FED EX OLSON</td>
+<td>Pre-Packaged Retail Market</td>
+<td>9999 OLSON DR, SAN DIEGO, CA 92121-2837</td>
+<td>...</td>
+<td>32.89</td>
+<td>-117.20</td>
+<td>2020-07-31</td>
+<td>2.27</td>
+</tr>
+</tbody>
+</table>
+<p>213 rows × 12 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8342,16 +9162,89 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e4895b26">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e4895b26">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">rest</span><span class="p">[[</span><span class="s1">'address'</span><span class="p">,</span> <span class="s1">'zip'</span><span class="p">]]</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>address</th>
+<th>zip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>3233 LA JOLLA VILLAGE DR, LA JOLLA, CA 92037</td>
+<td>92037</td>
+</tr>
+<tr>
+<th>1</th>
+<td>8950 VILLA LA JOLLA DR, SUITE# B123, LA JOLLA,...</td>
+<td>92037-1704</td>
+</tr>
+<tr>
+<th>2</th>
+<td>6902 LA JOLLA BLVD, LA JOLLA, CA 92037</td>
+<td>92037</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>997</th>
+<td>1234 TOURMALINE ST, SAN DIEGO, CA 92109-1856</td>
+<td>92109-1856</td>
+</tr>
+<tr>
+<th>998</th>
+<td>12925 EL CAMINO REAL, SUITE# AA4, SAN DIEGO, C...</td>
+<td>92130</td>
+</tr>
+<tr>
+<th>999</th>
+<td>2672 DEL MAR HEIGHTS RD, DEL MAR, CA 92014</td>
+<td>92014</td>
+</tr>
+</tbody>
+</table>
+<p>1000 rows × 2 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8367,16 +9260,89 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=48fd4ed0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=48fd4ed0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="p">[[</span><span class="s1">'score'</span><span class="p">,</span> <span class="s1">'grade'</span><span class="p">]]</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>score</th>
+<th>grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>96</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>1</th>
+<td>98</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>2</th>
+<td>98</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>5176</th>
+<td>0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>5177</th>
+<td>0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>5178</th>
+<td>90</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<p>5179 rows × 2 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8419,15 +9385,15 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=49cbc16e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=49cbc16e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">subset_rest</span><span class="p">(</span><span class="n">rest</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">subset_rest</span><span class="p">(</span><span class="n">rest</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">rest</span><span class="p">[[</span><span class="s1">'business_id'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'address'</span><span class="p">,</span> <span class="s1">'zip'</span><span class="p">,</span> <span class="s1">'opened_date'</span><span class="p">]]</span>
 
 <span class="n">rest</span> <span class="o">=</span> <span class="p">(</span>
@@ -8440,17 +9406,211 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d2580209">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>business_id</th>
+<th>name</th>
+<th>address</th>
+<th>zip</th>
+<th>opened_date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>211898487641</td>
+<td>MOBIL MART LA JOLLA VILLAGE</td>
+<td>3233 LA JOLLA VILLAGE DR, LA JOLLA, CA 92037</td>
+<td>92037</td>
+<td>2002-05-05</td>
+</tr>
+<tr>
+<th>1</th>
+<td>211930769329</td>
+<td>CAFE 477</td>
+<td>8950 VILLA LA JOLLA DR, SUITE# B123, LA JOLLA,...</td>
+<td>92037-1704</td>
+<td>2023-07-24</td>
+</tr>
+<tr>
+<th>2</th>
+<td>211909057778</td>
+<td>VALLEY FARM MARKET</td>
+<td>6902 LA JOLLA BLVD, LA JOLLA, CA 92037</td>
+<td>92037</td>
+<td>2019-01-22</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>997</th>
+<td>211899338714</td>
+<td>PACIFIC BEACH ELEMENTARY</td>
+<td>1234 TOURMALINE ST, SAN DIEGO, CA 92109-1856</td>
+<td>92109-1856</td>
+<td>2002-05-05</td>
+</tr>
+<tr>
+<th>998</th>
+<td>211942150255</td>
+<td>POKEWAN DEL MAR</td>
+<td>12925 EL CAMINO REAL, SUITE# AA4, SAN DIEGO, C...</td>
+<td>92130</td>
+<td>2016-11-03</td>
+</tr>
+<tr>
+<th>999</th>
+<td>211925713322</td>
+<td>SAFFRONO LOUNGE RESTAURANT</td>
+<td>2672 DEL MAR HEIGHTS RD, DEL MAR, CA 92014</td>
+<td>92014</td>
+<td>2022-11-03</td>
+</tr>
+</tbody>
+</table>
+<p>1000 rows × 5 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d2580209">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Same as the above – but the above makes it easier to chain more .pipe calls afterwards.</span>
 <span class="n">subset_rest</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">rest_path</span><span class="p">))</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>business_id</th>
+<th>name</th>
+<th>address</th>
+<th>zip</th>
+<th>opened_date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>211898487641</td>
+<td>MOBIL MART LA JOLLA VILLAGE</td>
+<td>3233 LA JOLLA VILLAGE DR, LA JOLLA, CA 92037</td>
+<td>92037</td>
+<td>2002-05-05</td>
+</tr>
+<tr>
+<th>1</th>
+<td>211930769329</td>
+<td>CAFE 477</td>
+<td>8950 VILLA LA JOLLA DR, SUITE# B123, LA JOLLA,...</td>
+<td>92037-1704</td>
+<td>2023-07-24</td>
+</tr>
+<tr>
+<th>2</th>
+<td>211909057778</td>
+<td>VALLEY FARM MARKET</td>
+<td>6902 LA JOLLA BLVD, LA JOLLA, CA 92037</td>
+<td>92037</td>
+<td>2019-01-22</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>997</th>
+<td>211899338714</td>
+<td>PACIFIC BEACH ELEMENTARY</td>
+<td>1234 TOURMALINE ST, SAN DIEGO, CA 92109-1856</td>
+<td>92109-1856</td>
+<td>2002-05-05</td>
+</tr>
+<tr>
+<th>998</th>
+<td>211942150255</td>
+<td>POKEWAN DEL MAR</td>
+<td>12925 EL CAMINO REAL, SUITE# AA4, SAN DIEGO, C...</td>
+<td>92130</td>
+<td>2016-11-03</td>
+</tr>
+<tr>
+<th>999</th>
+<td>211925713322</td>
+<td>SAFFRONO LOUNGE RESTAURANT</td>
+<td>2672 DEL MAR HEIGHTS RD, DEL MAR, CA 92014</td>
+<td>92014</td>
+<td>2022-11-03</td>
+</tr>
+</tbody>
+</table>
+<p>1000 rows × 5 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8471,10 +9631,10 @@ Which DataFrames and columns seem most useful to verify this?</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">subset_insp</span><span class="p">(</span><span class="n">insp</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">subset_insp</span><span class="p">(</span><span class="n">insp</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span>
         <span class="n">insp</span><span class="p">[[</span><span class="s1">'business_id'</span><span class="p">,</span> <span class="s1">'inspection_id'</span><span class="p">,</span> <span class="s1">'score'</span><span class="p">,</span> <span class="s1">'grade'</span><span class="p">,</span> <span class="s1">'completed_date'</span><span class="p">,</span> <span class="s1">'status'</span><span class="p">]]</span>
         <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'completed_date'</span><span class="p">:</span> <span class="s1">'date'</span><span class="p">})</span>
@@ -8494,10 +9654,10 @@ Which DataFrames and columns seem most useful to verify this?</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">subset_viol</span><span class="p">(</span><span class="n">viol</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">subset_viol</span><span class="p">(</span><span class="n">viol</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span>
         <span class="n">viol</span><span class="p">[[</span><span class="s1">'inspection_id'</span><span class="p">,</span> <span class="s1">'violation'</span><span class="p">,</span> <span class="s1">'major_violation'</span><span class="p">,</span> <span class="s1">'violation_accela'</span><span class="p">]]</span>
         <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'violation'</span><span class="p">:</span> <span class="s1">'kind'</span><span class="p">,</span>
@@ -8525,15 +9685,15 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e31ca1bc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e31ca1bc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">merge_all_restaurant_data</span><span class="p">():</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">merge_all_restaurant_data</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">(</span>
         <span class="n">rest</span>
         <span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">insp</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'business_id'</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'left'</span><span class="p">)</span>
@@ -8547,6 +9707,135 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>business_id</th>
+<th>name</th>
+<th>address</th>
+<th>zip</th>
+<th>...</th>
+<th>status</th>
+<th>kind</th>
+<th>is_major</th>
+<th>violation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>211898487641</td>
+<td>MOBIL MART LA JOLLA VILLAGE</td>
+<td>3233 LA JOLLA VILLAGE DR, LA JOLLA, CA 92037</td>
+<td>92037</td>
+<td>...</td>
+<td>Complete</td>
+<td>Hot and Cold Water</td>
+<td>Y</td>
+<td>21. Hot &amp; cold water available</td>
+</tr>
+<tr>
+<th>1</th>
+<td>211898487641</td>
+<td>MOBIL MART LA JOLLA VILLAGE</td>
+<td>3233 LA JOLLA VILLAGE DR, LA JOLLA, CA 92037</td>
+<td>92037</td>
+<td>...</td>
+<td>Complete</td>
+<td>Hot and Cold Water</td>
+<td>N</td>
+<td>21. Hot &amp; cold water available</td>
+</tr>
+<tr>
+<th>2</th>
+<td>211898487641</td>
+<td>MOBIL MART LA JOLLA VILLAGE</td>
+<td>3233 LA JOLLA VILLAGE DR, LA JOLLA, CA 92037</td>
+<td>92037</td>
+<td>...</td>
+<td>Complete</td>
+<td>Holding Temperatures</td>
+<td>N</td>
+<td>7. Proper hot &amp; cold holding temperatures</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>8728</th>
+<td>211925713322</td>
+<td>SAFFRONO LOUNGE RESTAURANT</td>
+<td>2672 DEL MAR HEIGHTS RD, DEL MAR, CA 92014</td>
+<td>92014</td>
+<td>...</td>
+<td>Complete</td>
+<td>Equipment and Utensil Storage, Use</td>
+<td>N</td>
+<td>35. Equipment / Utensils -approved, installed,...</td>
+</tr>
+<tr>
+<th>8729</th>
+<td>211925713322</td>
+<td>SAFFRONO LOUNGE RESTAURANT</td>
+<td>2672 DEL MAR HEIGHTS RD, DEL MAR, CA 92014</td>
+<td>92014</td>
+<td>...</td>
+<td>Complete</td>
+<td>Toilet Facilities</td>
+<td>N</td>
+<td>43. Toilet facilities -properly constructed, s...</td>
+</tr>
+<tr>
+<th>8730</th>
+<td>211925713322</td>
+<td>SAFFRONO LOUNGE RESTAURANT</td>
+<td>2672 DEL MAR HEIGHTS RD, DEL MAR, CA 92014</td>
+<td>92014</td>
+<td>...</td>
+<td>Complete</td>
+<td>Floors, Walls, and Ceilings</td>
+<td>N</td>
+<td>45. Floor, walls and ceilings - built, maintai...</td>
+</tr>
+</tbody>
+</table>
+<p>8731 rows × 13 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4107683b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8556,7 +9845,7 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-warning">
 <h3>Question 🤔 (Answer at <a href="https://dsc80.com/q">dsc80.com/q</a>)</h3>
-<p>Code: <code>lefts</code></p>
+<p>Code: <code>lec05-lefts</code></p>
 </div>
 <p>Why should the function above use two left joins? What would go wrong if we used other kinds of joins?</p>
 </div>
@@ -8584,12 +9873,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d8190fca">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d8190fca">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="p">[[</span><span class="s1">'score'</span><span class="p">,</span> <span class="s1">'grade'</span><span class="p">]]</span>
@@ -8598,12 +9887,85 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=76cf02db">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>score</th>
+<th>grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>96</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>1</th>
+<td>98</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>2</th>
+<td>98</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>5176</th>
+<td>0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>5177</th>
+<td>0</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>5178</th>
+<td>90</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<p>5179 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=76cf02db">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The proportion of values in each column that are missing.</span>
@@ -8613,18 +9975,165 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=08fdee4d">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>business_id      0.00
+inspection_id    0.00
+score            0.00
+grade            0.42
+date             0.00
+status           0.00
+dtype: float64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=08fdee4d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Why are there null values here?</span>
 <span class="c1"># insp['inspection_id'] and viol['inspection_id'] don't have any null values...</span>
 <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'inspection_id'</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[61]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>business_id</th>
+<th>name</th>
+<th>address</th>
+<th>zip</th>
+<th>...</th>
+<th>status</th>
+<th>kind</th>
+<th>is_major</th>
+<th>violation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>759</th>
+<td>211941133403</td>
+<td>TASTY CHAI</td>
+<td>8878 REGENTS RD 105, SAN DIEGO, CA 92122-5853</td>
+<td>92122-5853</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>1498</th>
+<td>211915545446</td>
+<td>EMBASSY SUITES SAN DIEGO LA JOLLA</td>
+<td>4550 LA JOLLA VILLAGE DR, SAN DIEGO, CA 92122-...</td>
+<td>92122-1248</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>1672</th>
+<td>211937443689</td>
+<td>SERVICENOW</td>
+<td>4770 EASTGATE MALL, SAN DIEGO, CA 92121-1970</td>
+<td>92121-1970</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>8094</th>
+<td>211997340975</td>
+<td>COOKIE SCOOP</td>
+<td>7759 GASTON DR, SAN DIEGO, CA 92126-3036</td>
+<td>92126-3036</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>8450</th>
+<td>211900595220</td>
+<td>I LOVE BANANA BREAD CO</td>
+<td>4068 DALLES AVE, SAN DIEGO, CA 92117-5518</td>
+<td>92117-5518</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>8545</th>
+<td>211963768842</td>
+<td>PETRA KITCHEN</td>
+<td>5252 BALBOA ARMS DR 175, SAN DIEGO, CA 92117-4949</td>
+<td>92117-4949</td>
+<td>...</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+</tbody>
+</table>
+<p>29 rows × 13 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -8685,12 +10194,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=32e2e9bb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=32e2e9bb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Look at the dtype!</span>
@@ -8700,19 +10209,57 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3adaa896">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0       2023-02-16
+1       2022-01-03
+2       2020-12-03
+           ...    
+5176    2023-03-06
+5177    2022-12-09
+5178    2022-11-30
+Name: date, Length: 5179, dtype: object</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3adaa896">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># This magical string tells Python what format the date is in.</span>
 <span class="c1"># For more info: https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior</span>
 <span class="n">date_format</span> <span class="o">=</span> <span class="s1">'%Y-%m-</span><span class="si">%d</span><span class="s1">'</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="n">date_format</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">])</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0      2023-02-16
+1      2022-01-03
+2      2020-12-03
+          ...    
+5176   2023-03-06
+5177   2022-12-09
+5178   2022-11-30
+Name: date, Length: 5179, dtype: datetime64[ns]</pre>
 </div>
 </div>
 </div>
@@ -8722,12 +10269,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Another advantage of defining functions is that we can reuse this function</span>
 <span class="c1"># for the 'opened_date' column in `rest` if we wanted to.</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">parse_dates</span><span class="p">(</span><span class="n">insp</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">parse_dates</span><span class="p">(</span><span class="n">insp</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
     <span class="n">date_format</span> <span class="o">=</span> <span class="s1">'%Y-%m-</span><span class="si">%d</span><span class="s1">'</span>
     <span class="n">dates</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="n">col</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="n">date_format</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">insp</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="n">col</span><span class="p">:</span> <span class="n">dates</span><span class="p">})</span>
@@ -8746,17 +10293,36 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8f62bf1d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8f62bf1d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Look at the dtype now!</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[66]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0      2023-02-16
+1      2022-01-03
+2      2020-12-03
+          ...    
+8728   2022-11-30
+8729   2022-11-30
+8730   2022-11-30
+Name: date, Length: 8731, dtype: datetime64[ns]</pre>
 </div>
 </div>
 </div>
@@ -8779,12 +10345,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=05aa4cce">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=05aa4cce">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">'2W'</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'date'</span><span class="p">)[</span><span class="s1">'score'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -8793,30 +10359,69 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1823b117">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[67]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>date
+2020-01-05    42.67
+2020-01-19    59.33
+2020-02-02    56.34
+              ...  
+2023-09-24    66.60
+2023-10-08    59.58
+2023-10-22    66.81
+Freq: 2W-SUN, Name: score, Length: 100, dtype: float64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1823b117">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Where are those numbers coming from?</span>
 <span class="n">insp</span><span class="p">[</span>
-    <span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2020-01-05'</span><span class="p">))</span> <span class="o">&amp;</span>
-    <span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s1">'2020-01-19'</span><span class="p">))</span>
+    <span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="s1">'2020-01-05'</span><span class="p">)</span> <span class="o">&amp;</span>
+    <span class="p">(</span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span> <span class="o">&lt;</span> <span class="s1">'2020-01-19'</span><span class="p">)</span>
 <span class="p">][</span><span class="s1">'score'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=02d55148">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[68]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>10        0
+11       92
+12        0
+       ... 
+4709      0
+4988    100
+5107     96
+Name: score, Length: 86, dtype: int64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=02d55148">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">insp</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">'2W'</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'date'</span><span class="p">)</span>
@@ -8824,6 +10429,42 @@ Which DataFrames and columns seem most useful to verify this?</p>
  <span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">'Number of Inspections Over Time'</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div> <div class="plotly-graph-div" id="bf50a58e-1d1b-4bcb-9af0-5b8e6af1293d" style="height:400px; width:600px;"></div> <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("bf50a58e-1d1b-4bcb-9af0-5b8e6af1293d")) {                    Plotly.newPlot(                        "bf50a58e-1d1b-4bcb-9af0-5b8e6af1293d",                        [{"hovertemplate":"variable=0\u003cbr\u003edate=%{x}\u003cbr\u003evalue=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"0","line":{"color":"#1F77B4","dash":"solid"},"marker":{"symbol":"circle"},"mode":"lines","name":"0","orientation":"v","showlegend":true,"x":["2020-01-05T00:00:00","2020-01-19T00:00:00","2020-02-02T00:00:00","2020-02-16T00:00:00","2020-03-01T00:00:00","2020-03-15T00:00:00","2020-03-29T00:00:00","2020-04-12T00:00:00","2020-04-26T00:00:00","2020-05-10T00:00:00","2020-05-24T00:00:00","2020-06-07T00:00:00","2020-06-21T00:00:00","2020-07-05T00:00:00","2020-07-19T00:00:00","2020-08-02T00:00:00","2020-08-16T00:00:00","2020-08-30T00:00:00","2020-09-13T00:00:00","2020-09-27T00:00:00","2020-10-11T00:00:00","2020-10-25T00:00:00","2020-11-08T00:00:00","2020-11-22T00:00:00","2020-12-06T00:00:00","2020-12-20T00:00:00","2021-01-03T00:00:00","2021-01-17T00:00:00","2021-01-31T00:00:00","2021-02-14T00:00:00","2021-02-28T00:00:00","2021-03-14T00:00:00","2021-03-28T00:00:00","2021-04-11T00:00:00","2021-04-25T00:00:00","2021-05-09T00:00:00","2021-05-23T00:00:00","2021-06-06T00:00:00","2021-06-20T00:00:00","2021-07-04T00:00:00","2021-07-18T00:00:00","2021-08-01T00:00:00","2021-08-15T00:00:00","2021-08-29T00:00:00","2021-09-12T00:00:00","2021-09-26T00:00:00","2021-10-10T00:00:00","2021-10-24T00:00:00","2021-11-07T00:00:00","2021-11-21T00:00:00","2021-12-05T00:00:00","2021-12-19T00:00:00","2022-01-02T00:00:00","2022-01-16T00:00:00","2022-01-30T00:00:00","2022-02-13T00:00:00","2022-02-27T00:00:00","2022-03-13T00:00:00","2022-03-27T00:00:00","2022-04-10T00:00:00","2022-04-24T00:00:00","2022-05-08T00:00:00","2022-05-22T00:00:00","2022-06-05T00:00:00","2022-06-19T00:00:00","2022-07-03T00:00:00","2022-07-17T00:00:00","2022-07-31T00:00:00","2022-08-14T00:00:00","2022-08-28T00:00:00","2022-09-11T00:00:00","2022-09-25T00:00:00","2022-10-09T00:00:00","2022-10-23T00:00:00","2022-11-06T00:00:00","2022-11-20T00:00:00","2022-12-04T00:00:00","2022-12-18T00:00:00","2023-01-01T00:00:00","2023-01-15T00:00:00","2023-01-29T00:00:00","2023-02-12T00:00:00","2023-02-26T00:00:00","2023-03-12T00:00:00","2023-03-26T00:00:00","2023-04-09T00:00:00","2023-04-23T00:00:00","2023-05-07T00:00:00","2023-05-21T00:00:00","2023-06-04T00:00:00","2023-06-18T00:00:00","2023-07-02T00:00:00","2023-07-16T00:00:00","2023-07-30T00:00:00","2023-08-13T00:00:00","2023-08-27T00:00:00","2023-09-10T00:00:00","2023-09-24T00:00:00","2023-10-08T00:00:00","2023-10-22T00:00:00"],"xaxis":"x","y":[9,86,44,58,72,32,4,11,56,29,33,51,58,57,52,63,53,42,10,38,23,55,38,41,33,65,66,56,37,38,22,38,23,20,27,48,54,68,40,51,59,43,48,49,39,39,48,52,57,45,58,59,43,42,42,53,49,56,54,56,101,114,68,42,26,44,82,66,64,70,86,53,73,72,77,54,38,76,111,111,93,48,68,77,66,53,36,36,91,62,83,42,21,16,40,29,35,70,67,26],"yaxis":"y","type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.5,"xanchor":"center"},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"autosize":true,"height":400,"margin":{"b":30,"l":30,"r":30,"t":30},"width":600}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"date"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"value"}},"legend":{"title":{"text":"variable"},"tracegroupgap":0},"title":{"text":"Number of Inspections Over Time"}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('bf50a58e-1d1b-4bcb-9af0-5b8e6af1293d');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script> </div>
 </div>
 </div>
 </div>
@@ -8839,12 +10480,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6d3cf8cb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6d3cf8cb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span>
@@ -8853,12 +10494,31 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=14818dc0">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0      2023-02-16
+1      2022-01-03
+2      2020-12-03
+          ...    
+5176   2023-03-06
+5177   2022-12-09
+5178   2022-11-30
+Name: date, Length: 5179, dtype: datetime64[ns]</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=14818dc0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">day</span>
@@ -8867,32 +10527,106 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=71848903">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0       16
+1        3
+2        3
+        ..
+5176     6
+5177     9
+5178    30
+Name: date, Length: 5179, dtype: int32</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=71848903">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofweek</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofweek</span> 
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6b6ae178">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>0       3
+1       0
+2       3
+       ..
+5176    0
+5177    4
+5178    2
+Name: date, Length: 5179, dtype: int32</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6b6ae178">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dow_counts</span> <span class="o">=</span> <span class="n">insp</span><span class="p">[</span><span class="s1">'date'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofweek</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">dow_counts</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">tickvals</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">7</span><span class="p">),</span> <span class="n">ticktext</span><span class="o">=</span><span class="p">[</span><span class="s1">'Mon'</span><span class="p">,</span> <span class="s1">'Tues'</span><span class="p">,</span> <span class="s1">'Wed'</span><span class="p">,</span> <span class="s1">'Thurs'</span><span class="p">,</span> <span class="s1">'Fri'</span><span class="p">,</span> <span class="s1">'Sat'</span><span class="p">,</span> <span class="s1">'Sun'</span><span class="p">])</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div> <div class="plotly-graph-div" id="f2b9b940-e9d2-4819-afaa-38a722d294ce" style="height:400px; width:600px;"></div> <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("f2b9b940-e9d2-4819-afaa-38a722d294ce")) {                    Plotly.newPlot(                        "f2b9b940-e9d2-4819-afaa-38a722d294ce",                        [{"alignmentgroup":"True","hovertemplate":"variable=count\u003cbr\u003edate=%{x}\u003cbr\u003evalue=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"count","marker":{"color":"#1F77B4","pattern":{"shape":""}},"name":"count","offsetgroup":"count","orientation":"v","showlegend":true,"textposition":"auto","x":[1,2,3,4,0,5,6],"xaxis":"x","y":[1277,1185,1018,892,793,12,2],"yaxis":"y","type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"rgb(36,36,36)"},"error_y":{"color":"rgb(36,36,36)"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"baxis":{"endlinecolor":"rgb(36,36,36)","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"rgb(36,36,36)"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"histogram2d"}],"histogram":[{"marker":{"line":{"color":"white","width":0.6}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"rgb(237,237,237)"},"line":{"color":"white"}},"header":{"fill":{"color":"rgb(217,217,217)"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":1,"tickcolor":"rgb(36,36,36)","ticks":"outside"}},"colorscale":{"diverging":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"sequential":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"sequentialminus":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]]},"colorway":["#1F77B4","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B","#E377C2","#7F7F7F","#BCBD22","#17BECF"],"font":{"color":"rgb(36,36,36)"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","radialaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"zaxis":{"backgroundcolor":"white","gridcolor":"rgb(232,232,232)","gridwidth":2,"linecolor":"rgb(36,36,36)","showbackground":true,"showgrid":false,"showline":true,"ticks":"outside","zeroline":false,"zerolinecolor":"rgb(36,36,36)"}},"shapedefaults":{"fillcolor":"black","line":{"width":0},"opacity":0.3},"ternary":{"aaxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"baxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"},"bgcolor":"white","caxis":{"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":false,"showline":true,"ticks":"outside"}},"title":{"x":0.5,"xanchor":"center"},"xaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"yaxis":{"automargin":true,"gridcolor":"rgb(232,232,232)","linecolor":"rgb(36,36,36)","showgrid":true,"showline":true,"ticks":"outside","title":{"standoff":15},"zeroline":false,"zerolinecolor":"rgb(36,36,36)"},"autosize":true,"height":400,"margin":{"b":30,"l":30,"r":30,"t":30},"width":600}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"date"},"tickvals":[0,1,2,3,4,5,6],"ticktext":["Mon","Tues","Wed","Thurs","Fri","Sat","Sun"]},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"value"}},"legend":{"title":{"text":"variable"},"tracegroupgap":0},"barmode":"relative"},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('f2b9b940-e9d2-4819-afaa-38a722d294ce');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script> </div>
 </div>
 </div>
 </div>
@@ -8961,12 +10695,12 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=54edf07d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=54edf07d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">wide_example</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -8981,16 +10715,144 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2cc75510">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Jan</th>
+<th>Feb</th>
+<th>Mar</th>
+</tr>
+<tr>
+<th>Year</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>2001</th>
+<td>10</td>
+<td>20</td>
+<td>30</td>
+</tr>
+<tr>
+<th>2002</th>
+<td>130</td>
+<td>200</td>
+<td>340</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2cc75510">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">wide_example</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>variable</th>
+<th>value</th>
+</tr>
+<tr>
+<th>Year</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>2001</th>
+<td>Jan</td>
+<td>10</td>
+</tr>
+<tr>
+<th>2002</th>
+<td>Jan</td>
+<td>130</td>
+</tr>
+<tr>
+<th>2001</th>
+<td>Feb</td>
+<td>20</td>
+</tr>
+<tr>
+<th>2002</th>
+<td>Feb</td>
+<td>200</td>
+</tr>
+<tr>
+<th>2001</th>
+<td>Mar</td>
+<td>30</td>
+</tr>
+<tr>
+<th>2002</th>
+<td>Mar</td>
+<td>340</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -9015,7 +10877,7 @@ Which DataFrames and columns seem most useful to verify this?</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="alert alert-warning">
 <h3>Question 🤔 (Answer at <a href="https://dsc80.com/q">dsc80.com/q</a>)</h3>
-<p>Code: <code>qs</code></p>
+<p>Code: <code>lec05-qs</code></p>
 </div>
 <p>What questions do you want me to try and answer with the data? I'll start with a single pre-prepared question, and then answer student questions until we run out of time.</p>
 </div>
