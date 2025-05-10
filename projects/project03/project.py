@@ -15,7 +15,25 @@ import time
 
 
 def get_book(url):
-    ...
+    time.sleep(0.5) 
+    response = requests.get('https://www.gutenberg.org/ebooks/16328.txt.utf-8')
+    book_text = response.text
+
+    start_marker = '*** START OF'
+    end_marker = '*** END OF'
+
+    start_ix = book_text.find(start_marker)
+    end_ix = book_text.find(end_marker)
+
+    # skip start 
+    skip_start = book_text.find('\n', start_ix)
+        
+    # Slice between markers (skip marker itself)
+    content = book_text[skip_start:end_ix]
+
+    content = content.replace('\r\n', '\n')
+
+    return content
 
 
 # ---------------------------------------------------------------------
