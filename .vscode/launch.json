@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Lab06_1 Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "file": "/Users/apple/Desktop/dsc80-2025-sp/labs/lab06/lab06_1.html"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open lab06_1.html",
+            "file": "/Users/apple/Desktop/dsc80-2025-sp/labs/lab06/lab06_1.html"
+        }
+    ]
+}
